@@ -8,11 +8,13 @@ type Vertex struct {
 	Y int
 }
 
+// 指针接受者,对值的修改会影响到原油的类型变量
 func (coo *Vertex) GetCoordinate() {
 	fmt.Printf("(%d,%d)\n", coo.X, coo.Y)
 	return
 }
 
+// 值接受者
 // 这里还有一种方式，叫值拷贝的方式,即当我在通过这个函数操作的时候，他显示的内容只会在这个函数内有效，而用*Vertex则会修改外部的值
 func (coo Vertex) GetCoordinate1() {
 	fmt.Printf("%d,%d\n", coo.X, coo.Y)
