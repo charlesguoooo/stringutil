@@ -11,11 +11,11 @@ import (
 func PT() {
 	i, j := 42, 2701
 
-	//p := &i
-	var p *int // 声明指针类型，声明p的类型是[int型的指针]
+	p := &i
+	//var p *int // 声明指针类型，声明p的类型是[int型的指针]
 	//p := new(int) // 这个和上面相等
-	p = &i // 取值地址
-	fmt.Printf("%v\n", p)
+	//p = &i // 取值地址
+	fmt.Printf("%T\n", p)
 	fmt.Println(*p) // 取地址指向的实际值
 
 	*p = 21

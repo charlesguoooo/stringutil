@@ -8,7 +8,7 @@ type Vertex struct {
 	Y int
 }
 
-// 指针接受者,对值的修改会影响到原油的类型变量
+// 指针接受者,对值的修改会影响到原有的类型变量
 func (coo *Vertex) GetCoordinate() {
 	fmt.Printf("(%d,%d)\n", coo.X, coo.Y)
 	return

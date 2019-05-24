@@ -5,7 +5,7 @@ import "runtime"
 
 func SW() {
 	fmt.Print("GO runs on ")
-	switch os := runtime.GOOS; os {
+	switch os := runtime.GOOS;os {
 	case "drawin":
 		fmt.Println("OS X.")
 	case "linux":
